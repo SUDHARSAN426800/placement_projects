@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <div class="calc">
+      <h1>CALCULATOR</h1>
+    <div class="input">
+      <input type="text" id="display" readonly placeholder="0">
+      <button onclick="clearDisplay()">C</button>
+    </div>
+    <div class="btn">
+      <button id="id_7" onclick="insert('7')">7</button>
+      <button id="id_8" onclick="insert('8')">8</button>
+      <button id="id_9" onclick="insert('9')">9</button>
+      <button id="id_11" onclick="insert('+')">+</button>
+      <button id="id_4" onclick="insert('4')">4</button>
+      <button id="id_5" onclick="insert('5')">5</button>
+      <button id="id_6" onclick="insert('6')">6</button>
+      <button id="id_12" onclick="insert('-')">-</button>
+      <button id="id_1" onclick="insert('1')">1</button>
+      <button id="id_2" onclick="insert('2')">2</button>
+      <button id="id_3" onclick="insert('3')">3</button>
+      <button id="id_13" onclick="insert('*')">*</button>
+      <button id="id_14" onclick="insert('/')">/</button>
+      <button id="id_0" onclick="insert('0')">0</button>
+      <button id="id_15" onclick="insert('.')">.</button>
+      <button id="id_16" onclick="submitCalc()">=</button>
+    </div>
+  </div>
+</body>
+</html>
