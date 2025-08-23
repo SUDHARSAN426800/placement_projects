@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.robot{
+    width: 250px;
+    height: 500px;
+    margin: 0 auto;
+}
+.title{
+    margin-top: 0px;
+}
+.head{
+    margin: 0 auto;
+    width: 185px;
+    height: 170px;
+    margin-top: 100px;
+    background-color: gray;
+    margin-bottom: 5px;
+    border-radius: 50% 50% 5% 5%;
+}
+.eyes       {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.left_eye{
+    width: 20px;
+    height: 20px;
+    background-color:aliceblue;
+    border-radius: 50%;
+    margin-top: 70px;
+}
+.right_eye{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 70px;
+}
+.middle{
+    height: 190px;
+    width: 240px;
+    margin: 0 auto;
+    justify-content: space-around;
+     display: flex;
+}
+.left_hand{
+    width: 30px;
+    height: 120px;
+    margin-top: 20px;
+    background-color: gray;
+    border-radius: 30px;
+}
+.middle_body{
+     width: 170px;
+     height: 190px;
+     background-color: gray;
+     border-radius: 35px;
+}
+.right_hand{
+    width: 30px;
+    height: 120px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: gray;
+}
+.lower{
+    width: 130px;
+    height: 110px;
+    margin: 0 auto;
+    justify-content: space-around;
+    display: flex;
+}
+.left_leg{
+    width: 30px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: gray;
+}
+.right_leg{
+    width: 30px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: gray;
+}
+.robot:hover .left_eye{
+    background-color:bisque;
+    transition-duration: 1s;
+}
+.robot:hover .right_eye{
+    background-color:antiquewhite;
+    transition-duration: 2s;
+}
+.robot:hover .middle_body{
+    background-color: orange;
+    transition-duration: 2s;
+    animation-name: middle_body-position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.350s;
+}
+.robot:hover .head{
+    background-color: burlywood;
+    transition-duration: 1s;
+    animation-name: head-position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.350s;
+}
+.robot:hover .left_leg{
+    background-color:darkslategrey;
+    transition-duration: 1s;
+    animation-name: left_leg-position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.350s;
+}
+.robot:hover .right_leg{
+    background-color:cadetblue;
+    transition-duration: 2s;
+    animation-name: right_leg-position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.350s;
+}
+.robot:hover .left_hand {
+    background-color: violet;
+    animation-name: left_hand-position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.350s;
+}
+.robot:hover .right_hand {
+    background-color: pink;
+    animation-name: right_hand-position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.350s;
+}
+@keyframes head-position{
+    0%{
+        width: 170px;
+        transform: rotate(10deg);
+        background-color:blue;
+    }
+    50%{
+        width: 180px;
+        transform: rotate(-10deg);
+        background-color: aquamarine;
+    }
+    100%{
+        width: 170px;
+        transform: rotate(10deg);
+        background-color: blueviolet;
+    }
+}
+@keyframes left_leg-position{
+    0%{
+        transform: rotate(-40deg);
+        background-color: darkslategray;
+    }
+    50%{
+        transform: rotate(10deg);
+        background-color: darkseagreen;
+    }
+    100%{
+        transform: rotate(-40deg);
+        background-color: darkslategray;
+    }
+}
+@keyframes right_leg-position{
+    0%{
+        transform: rotate(40deg);
+        background-color: cadetblue;
+    }
+    50%{
+        transform: rotate(-10deg);
+        background-color: lightcoral;
+    }
+    100%{
+        transform: rotate(40deg);
+        background-color: cadetblue;
+    }
+}
+@keyframes left_hand-position {
+    0% {
+         transform: rotate(0deg); 
+         background-color: violet;
+    }
+    50% {
+         transform: rotate(20deg);
+            background-color: lightpink;
+    }
+    100% {
+         transform: rotate(0deg);
+            background-color: violet;
+    }
+}
+@keyframes right_hand-position {
+    0% {
+         transform: rotate(0deg);
+            background-color: pink;
+    }
+    50% { 
+        transform: rotate(-20deg); 
+        background-color: lightyellow;
+    }
+    100% {
+         transform: rotate(0deg); 
+            background-color: pink;
+    }
+}
+@keyframes middle_body-position {
+    0% {
+        width: 170px;
+        height: 190px;
+        transform: rotate(0deg);
+        background-color:chocolate;
+    }
+    50% {
+        width: 180px;
+        height: 200px;
+        transform: rotate(0deg);
+        background-color:chartreuse;
+    }
+    100% {
+        width: 170px;
+        height: 190px;
+        transform: rotate(0deg);
+        background-color:darkorange;
+    }
+}
